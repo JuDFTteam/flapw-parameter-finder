@@ -1,9 +1,6 @@
-[![Build Status](https://travis-ci.org/materialscloud-org/structure-property-visualizer.svg?branch=master)](https://travis-ci.org/materialscloud-org/structure-property-visualizer)
+# FLAPW Parameter finder app
 
-# Structure-Property-Visualizer
-
-Use this app to generate interactive visualizations like [these](https://www.materialscloud.org/discover/cofs#mcloudHeader) 
-for atomic structures and their properties.
+Use this app to browse interactive visualizations of FLAPW sets generated for the atomic structure set form the [Open Quantum Materials Database (OQMD)](http://www.oqmd.org/). The set represents the default choice of the FLEUR input generator (Version MAX1, 2018) with close to touching Muffin-tin radii (which may or may not be resonable). Feel free to use this parameter set to choose resonable FLAPW parameters for your calculations, especially for HTC runs.
 
 ## Features
 
@@ -13,7 +10,7 @@ for atomic structures and their properties.
  * simple deployment on [materialscloud.org](https://www.materialscloud.org/discover/menu) through [Docker containers](http://docker.com)
  * driven by database backend:
    1. [sqlite](https://www.sqlite.org/index.html) database (default)
-   1. [AiiDA](http://www.aiida.net/) database backend (less tested)
+
 
 ## Getting started
 
@@ -26,8 +23,8 @@ for atomic structures and their properties.
 ### Installation
 
 ```
-git clone https://github.com/materialscloud-org/structure-property-visualizer.git
-cd structure-property-visualizer
+git clone https://github.com/JuDFTteam/FLAPW_parameter_finder.git
+cd FLAPW_parameter_finder
 pip install -e .     # install python dependencies
 ./prepare.sh         # download test data (run only once)
 ```
